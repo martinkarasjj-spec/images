@@ -57,7 +57,7 @@ for ax in axes[1:]:
     labels += ll
 ax1.legend(handles, labels, loc='upper left', fontsize=9, framealpha=0.9)
 
-ax1.set_title('Strategic FDI governance in the literature, 1992–2025\n(five series, shared year axis, one y-axis per series)',
+ax1.set_title('FDI Discourse and Policy\n(five series, shared year axis, one y-axis per series)',
               fontsize=13)
 
 fig.savefig('combined_multiaxis.png', dpi=150, bbox_inches='tight')
