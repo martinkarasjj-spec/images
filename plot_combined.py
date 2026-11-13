@@ -29,11 +29,11 @@ def plot_on(ax, key, label, linestyle, marker, ms):
     ax.tick_params(axis='y', colors=C[key])
     ax.spines['right'].set_color(C[key])
 
-plot_on(ax1, 'implicit', 'Articles w/ explicit or implicit concepts (count)', '-', 's', 4)
-plot_on(ax2, 'explicit', 'Articles w/ explicit concepts (count)', '--', 'o', 4)
-plot_on(ax3, 'ratio', 'Ratio strategic / total FDI articles', '-', '', 0)
-plot_on(ax4, 'treaty', 'Avg treaty strength (inverted, as original)', '--', 's', 4)
-plot_on(ax5, 'screening', 'Countries w/ screening mechanisms (count)', '-', 'o', 4)
+plot_on(ax1, 'implicit', '4. Strategic FDI Governance Discourse: Explicit + Implicit', '-', 's', 4)
+plot_on(ax2, 'explicit', '3. Strategic FDI Governance Discourse: Explicit', '--', 'o', 4)
+plot_on(ax3, 'ratio', '5. Strategic FDI Governance Discourse: Ratio', '-', '', 0)
+plot_on(ax4, 'treaty', '1. Average Treaty Strength', '--', 's', 4)
+plot_on(ax5, 'screening', '2. Number of Countries with Investment Screening Mechanism', '-', 'o', 4)
 
 ax1.set_ylim(0, 40)
 ax2.set_ylim(0, 12)
@@ -47,7 +47,7 @@ ax1.set_xlabel('Year', fontsize=12)
 ax1.grid(True, axis='x', linestyle=':', alpha=0.4)
 ax1.spines['left'].set_color(C['implicit'])
 ax1.tick_params(axis='y', colors=C['implicit'])
-ax1.set_ylabel('Articles w/ explicit or implicit concepts (count)', color=C['implicit'], fontsize=11)
+ax1.set_ylabel('4. Strategic FDI Governance Discourse: Explicit + Implicit', color=C['implicit'], fontsize=11)
 
 h1, l1 = ax1.get_legend_handles_labels()
 handles, labels = h1, l1
