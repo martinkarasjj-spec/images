@@ -38,7 +38,7 @@ plot_on(ax5, 'screening', 'Countries w/ screening mechanisms (count)', '-', 'o',
 ax1.set_ylim(0, 40)
 ax2.set_ylim(0, 12)
 ax3.set_ylim(0.02, 0.06)
-ax4.set_ylim(5.5, 3.0)
+ax4.set_ylim(6.0, 3.0)
 ax5.set_ylim(10, 45)
 
 ax1.set_xlim(1991.5, 2025.5)
